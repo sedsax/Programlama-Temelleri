@@ -1,0 +1,77 @@
+#değişkenler
+
+baslik='ilginizi cekebilir!!!'
+vade=48
+faizOrani=1.96
+
+print('Baslik : ' + baslik)
+print(vade+vade)
+print(faizOrani)
+
+print(type(baslik))
+print(type(vade))
+print(type(faizOrani))
+
+# type=veri tipi
+#operator ( +  ....)
+#---------------------------------------
+
+#şart blokları
+
+dolarDun=7.62
+dolarBugun=7.45
+
+#syntax
+#indentation
+#true/false
+if dolarDun>dolarBugun:
+    print("Azalış oku")
+else:
+    print("Artış oku")
+
+#if-else bloğunu sadece sadece 2 durum varsa kullanırız.
+#fakat yukarıdaki dolar örneğinde 2 değil 3 durum var:
+#dolar;artmış olabilir,azalmış olabilir,sabit kalmış olabilir
+print("-------------------------------------------")
+if dolarDun>dolarBugun:
+    print("Azalış oku")
+elif dolarDun<dolarBugun:
+    print("Artış oku")
+else:
+    print("Değişiklik yok")
+print("-------------------------------------------")
+
+#Listeleme
+#Döngüler/Loops
+kurs1="python"
+kurs2="java"
+kurs3="algoritma"
+kurs4="veri yapıları"
+
+print(kurs1)
+print(kurs2)
+print(kurs3)
+print(kurs4)
+
+print("------")
+
+kurslar=["python","java","algoritma","veri yapıları"]
+
+for i in kurslar:
+    print(i)
+
+print("-------------------------------------------")
+
+#Fonksiyonlar
+
+def kurslariListele():
+    kurslar=["python","java","algoritma","veri yapıları","A"]
+    for kurs in kurslar:
+        print(kurs)
+
+kurslariListele()
+kurslariListele()
+kurslariListele()
+kurslariListele()
+kurslariListele()
+
