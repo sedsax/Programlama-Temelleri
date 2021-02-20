@@ -1,0 +1,63 @@
+using System;
+//Bunu kendim tasarlayıp yazdım ve syntax hataları oldu ilk başta, neyse ki düzelttim :)
+class Program {
+    static void Main(string[] args) {
+    
+    //Product class ından 4 tane ürünü tanımladım  
+    
+        Product urun1 = new Product();
+        urun1.urunAdi = "Bilgisayar";
+        urun1.urunKodu = "100200300";
+        urun1.fiyat = 5.600;
+        urun1.kategori = "Teknolojik Aletler";
+        
+        Product urun2 = new Product();
+        urun2.urunAdi = "Ceket";
+        urun2.urunKodu = "300211344";
+        urun2.fiyat = 109.99;
+        urun2.kategori = "Giyim";
+        
+        Product urun3 = new Product();
+        urun3.urunAdi = "L Koltuk";
+        urun3.urunKodu = "210300490";
+        urun3.fiyat = 1.450;
+        urun3.kategori = "Ev Eşyaları";
+        
+        Product urun4 = new Product();
+        urun4.urunAdi = "Buzdolabı";
+        urun4.urunKodu = "606233910";
+        urun4.fiyat = 2.199;
+        urun4.kategori = "Beyaz Eşyalar";
+        
+     //Product class türünde 4 elemana sahip urunler array ini oluşturdum.
+        Product[] urunler = new Product[] {urun1,urun2,urun3,urun4};
+     
+     // urunler array inin elemanlarını foreach döngüsü ile yazdırdım.
+        foreach(var n in urunler){
+            Console.WriteLine(n.urunAdi + " : " + n.fiyat + " TL / "+ n.kategori +" / " + n.urunKodu);   
+        }
+Console.WriteLine("----------------------------");
+    // urunler array inin elemanlarını for döngüsü ile yazdırdım.
+        for(int i=0; i<urunler.Length; i++){
+            Console.WriteLine(urunler[i].urunAdi + " : " + urunler[i].fiyat + " TL / "+ urunler[i].kategori +" / " + urunler[i].urunKodu);
+        }
+Console.WriteLine("----------------------------");
+    // urunler array inin elemanlarını while döngüsü ile yazdırdım.
+        int a=0;
+        while(a<urunler.Length){
+            Console.WriteLine(urunler[a].urunAdi + " : " + urunler[a].fiyat + " TL / "+ urunler[a].kategori +" / " + urunler[a].urunKodu);
+            a++;
+        }
+        
+    }    
+        
+}
+
+// Product adında bir class tanımladım. 
+class Product{
+    public string urunAdi {get; set;}
+    public string urunKodu {get; set;}
+    public double fiyat {get; set;}
+    public string kategori {get; set;}
+    
+}
