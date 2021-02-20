@@ -1,0 +1,49 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+
+//"class" lar da string,integer,double gibi bir veri tipidir
+//kendi veri tipimizi "class" larla oluşturuyoruz
+        Kurs kurs1 = new Kurs();
+        kurs1.kursAdi="C#";
+        kurs1.egitmen="Engin Demiroğ";
+        kurs1.kontenjan=300;
+        
+        Kurs kurs2 = new Kurs();
+        kurs2.kursAdi="Java";
+        kurs2.egitmen="Berkay Bilgin";
+        kurs2.kontenjan=100;
+        
+        //gerçekleşmesi hedeflenen bir hayal
+        Kurs kurs3 = new Kurs();
+        kurs3.kursAdi="C++";
+        kurs3.egitmen="Sedanur Savaş";
+        kurs3.kontenjan=500;
+        
+        Kurs kurs4 = new Kurs();
+        kurs4.kursAdi="Python";
+        kurs4.egitmen="Hatice Kerimoğlu";
+        kurs4.kontenjan=250;
+        
+        Console.WriteLine(kurs1.kursAdi + " : " + kurs1.egitmen + " -> "+ kurs1.kontenjan);
+        
+        Console.WriteLine(kurs2.kursAdi + " : " + kurs2.egitmen + " -> "+ kurs2.kontenjan);
+        
+        Console.WriteLine(kurs3.kursAdi + " : " + kurs3.egitmen + " -> "+ kurs3.kontenjan);
+Console.WriteLine("------------------------------------");
+
+        Kurs[] kurslar = new Kurs[] {kurs1,kurs2,kurs3,kurs4};
+        
+        foreach(var kurs in kurslar){
+            Console.WriteLine(kurs.kursAdi + " : " + kurs.egitmen + " -> "+ kurs.kontenjan);   
+        }
+Console.WriteLine("------------------------------------");   
+    }
+class Kurs{
+        public string kursAdi {get; set;}
+        public string egitmen {get; set;}
+        public int kontenjan {get; set;}
+    
+    }
+}
