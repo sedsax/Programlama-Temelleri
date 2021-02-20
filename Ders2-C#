@@ -1,0 +1,95 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+ // DO NOT REPEAT YOURSELF!!!       
+        //type safety = tip güvenliği
+        // değer tutucu, alias
+            string kategoriEtiketi="Kategori";
+        int ogrenciSayisi=3200;
+        double ortalama=3.45;
+        bool sistemeGirisDurumu = false;
+        int i;
+        
+        //kendi yorumum
+        for(i=0; i<3; i++){
+            Console.WriteLine("Etiket : " + kategoriEtiketi);
+            Console.WriteLine("Öğrenci Sayısı : " + ogrenciSayisi);
+            Console.WriteLine("Not ortalaması : " + ortalama);
+    Console.WriteLine("----------------------------");
+        }
+        
+        //sistemeGirisDurumu = false
+        if(sistemeGirisDurumu == false) {
+            Console.WriteLine("Kullanıcı Ayarları");
+        }
+        else{
+            Console.WriteLine("Kullanıcı Girişi");
+        }
+    Console.WriteLine("----------------------------");
+        
+        sistemeGirisDurumu=true;
+        //sistemeGirisDurumu = true
+        if(sistemeGirisDurumu == false) {
+            Console.WriteLine("Kullanıcı Ayarları");
+        }
+        else{
+            Console.WriteLine("Kullanıcı Girişi");
+        }
+    Console.WriteLine("----------------------------");
+        
+        double dolarDun=7.64;
+        double dolarBugun=7.58;
+        
+        //kendi yorumum
+        for(i=0; i<3; i++) {
+            
+            if(dolarDun > dolarBugun) {
+                Console.WriteLine("Azalış butonu");
+                double temp;
+                temp=dolarDun;
+                dolarDun=dolarBugun;
+                dolarBugun=temp;
+            }
+            else if (dolarDun < dolarBugun){
+                Console.WriteLine("Artış butonu");
+                dolarDun = dolarBugun;
+            }
+            else{
+                Console.WriteLine("Değişmedi butonu");
+            }
+        }
+    Console.WriteLine("----------------------------");
+        // 1 den 20 ye kadar üçer üçer arttırarak yazdık
+        for(int a=1; a<20; a+=3){
+            Console.WriteLine(a);
+        }
+    Console.WriteLine("----------------------------");  
+    //bu şekilde stringlerde bir tane metin değeri tutarız
+        string kurs1 = "C#";
+        string kurs2 = "Java";
+        string kurs3 = "Python";
+        string kurs4 = "C++";
+        
+        Console.WriteLine("Kurs1: " + kurs1);
+        Console.WriteLine("Kurs2: " + kurs2);
+        Console.WriteLine("Kurs3: " + kurs3);
+        Console.WriteLine("Kurs4: " + kurs4);
+   Console.WriteLine("----------------------------");  
+      
+   
+    //array-dizi
+    //arrayAdı.Length ifadesi dizinin boyutunu/eleman sayısını verir. Ekranı dinamikleştirdik.
+    //kendi yorumum da var
+        string[] kurslar = new string[] {"C#","Java","Python","C++", "C"};
+        for(int j=0; j<kurslar.Length; j++){
+            Console.WriteLine("Kurs"+ (j+1) + ":" + " " + kurslar[j]);
+        }
+    Console.WriteLine("----------------------------");
+        
+        //"in kurslar" -> kurslar ı dolaş demektir
+        foreach(string k in kurslar){
+            Console.WriteLine(k);   
+        }
+    }
+}
