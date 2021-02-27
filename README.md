@@ -1,6 +1,5 @@
 # Programlama-Temelleri
-# Python ile kodlamanın iskeleti
-# C# ile programlamaya devam
+# Python ile kodlamanın iskeleti ve C# ile programlamaya devam
 
 Engin Demiroğ Hocamızın başlatmış olduğu harika prgramlama kampında yazdığımız kodları kendi notlarımı da ekleyerek burada tutmak istiyorum. 
 Hem öğrenmemi pekiştirmek için hem de ilerde takıldığım yerlerde dönüp bakabilmek için faydalı olacaktır.
