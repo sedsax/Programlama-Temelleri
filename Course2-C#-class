@@ -3,8 +3,8 @@ using System;
 class Program {
     static void Main(string[] args) {
 
-//"class" lar da string,integer,double gibi bir veri tipidir
-//kendi veri tipimizi "class" larla oluşturuyoruz
+ //"class" lar da string,integer,double gibi bir veri tipidir
+ //kendi veri tipimizi "class" larla oluşturuyoruz
         Kurs kurs1 = new Kurs();
         kurs1.kursAdi="C#";
         kurs1.egitmen="Engin Demiroğ";
